@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            //Click
+            $(".click").click(function() {
+                event.preventDefault()
+                $(alert("You clicked!"))
+            }); 
+            //Hide
+            $('.hide').click(function() {
+                event.preventDefault()
+                $(".hide").hide();
+            });
+            //Show
+            $('.show').click(function() {
+                event.preventDefault()
+                $(".show").show();
+            });
+            //Toggle
+            $('.toggle').click(function() {
+                event.preventDefault()
+                $(".toggles").toggle();
+            });
+            //Slide Down
+            $('.slidedown').click(function() {
+                event.preventDefault()
+                $(".slide").slideDown();
+            });
+            //Slide Up
+            $('.slideup').click(function() {
+                event.preventDefault()
+                $(".slide").slideUp();
+            });
+            //Slide Toggle
+            $('.slidetoggle').click(function() {
+                event.preventDefault()
+                $(".slide").slideToggle();
+            });
+            //Fade In
+            $('.fadein').click(function() {
+                event.preventDefault()
+                $(".fade").fadeIn();
+            });
+            //Fade Out
+            $('.fadeout').click(function() {
+                event.preventDefault()
+                $(".fade").fadeOut();
+            });
+            //Add Class
+            $('.addclass').click(function() {
+                event.preventDefault()
+                $(".addclass").addClass("selected");
+            });
+            //Before
+            $('.before').click(function() {
+                event.preventDefault()
+                $(".before").before("hello");
+            });
+            //After
+            $('.after').click(function() {
+                event.preventDefault()
+                $(".after").after("hello");
+            });
+            //Append
+            $('.append').click(function() {
+                event.preventDefault()
+                $(".append").append("hello");
+            });
+            //HTML
+            $('.html').click(function() {
+                event.preventDefault()
+                $(".html").html("I was changed!!");
+            });
+            //Attr
+            $('.attr').click(function() {
+                event.preventDefault()
+                $('#attr').attr(".selected");
+            });
+            //Val
+            $('.after').click(function() {
+                event.preventDefault()
+                $(".after").after("hello");
+            });
+            //Text
+            $('.text').click(function() {
+                event.preventDefault()
+                $(".text").text("hello");
+            });
+        })
+    </script>
+
+    <title>Mini Documentation</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="side-container">
+            <ul class="items">
+                <li><a href="#click">.click()</a></li>
+                <li><a href="#hide">.hide()</a></li>
+                <li><a href="#show">.show()</a></li>
+                <li><a href="#toggle">.toggle()</a></li>
+                <li><a href="#slidedown">.slideDown()</a></li>
+                <li><a href="#slideup">.slideUp()</a></li>
+                <li><a href="#slidetoggle">.slideToggle()</a></li>
+                <li><a href="#fadein">.fadeIn()</a></li>
+                <li><a href="#fadeout">.fadeOut()</a></li>
+                <li><a href="#addclass">.addClass()</a></li>
+                <li><a href="#before">.before()</a></li>
+                <li><a href="#after">.after()</a></li>
+                <li><a href="#append">.append()</a></li>
+                <li><a href="#html">.html()</a></li>
+                <li><a href="#attr">.attr()</a></li>
+                <li><a href="#val">.val()</a></li>
+                <li><a href="#text">.text()</a></li>
+            </ul>
+        </div>
+        <div class="docs-container">
+            <h1>My Mini Documentation</h1>
+            <div class="information-container">
+                <h4 id="click">Click</h4>
+                <a href="" class="click">.click()</a>
+                <p>Binds an event handler to the "click" JavaScript event, or trigger that event on an element. Example: Clicking the button will display alert box.</p>
+            </div>
+            <div class="information-container">
+                <h4 id="hide">Hide</h4>
+                <a href="#" class="hide">.hide()</a>
+                <p class="hide show">Hides the matched elements. Example: Hiding this paragraph.</p>
+            </div>
+            <div class="information-container">
+                <h4 id="show">Show</h4>
+                <a href="#" class="show">.show()</a>
+                <p class="hide show">Displays the matched elements. Example: Showing the hidden paragraph here.</p>
+            </div>
+            <div class="information-container">
+                <h4 id="toggle">Toggle</h4>
+                <a href="#" class="toggle">.toggle()</a>
+                <p class="toggles"> Display or hide the matched elements. Example: Toggles the visibility of elements.
+                </p>
+            </div>
+            <div class="information-container">
+                <h4 id="slidedown">Slide Down</h4>
+                <a href="#" class="slidedown">.slideDown()</a>
+                <p class="slide">Display the matched elements with a sliding motion. Example: Slides down elements of a page.
+                </p>
+            </div>
+            <div class="information-container">
+                <h4 id="slideup">Slide Up</h4>
+                <a href="#" class="slideup">.slideUp()</a>
+                <p class="slide">Hide the matched elements with a sliding motion.</p>
+            </div>
+            <div class="information-container">
+                <h4 id="slidetoggle">Slide Toggle</h4>
+                <a href="#" class="slidetoggle">.slideToggle()</a>
+                <p class="slide">Display or hide the matched elements with a sliding motion.</p>
+            </div>
+            <div class="information-container">
+                <h4 id="fadein">Fade In</h4>
+                <a href="#" class="fadein">.fadeIn()</a>
+                <p class="fade">Display the matched elements by fading them to opaque.</p>
+            </div>
+            <div class="information-container">
+                <h4 id="fadeout">Fade Out</h4>
+                <a href="#" class="fadeout">.fadeOut()</a>
+                <p class="fade">Hide the matched elements by fading them to transparent.</p>
+            </div>
+            <div class="information-container">
+                <h4 id="addclass">Add Class</h4>
+                <a href="#" class="addclass">.addClass()</a>
+                <p class="addclass">Adds the specified class(es) to each element in the set of matched elements.</p>
+            </div>
+            <div class="information-container">
+                <h4 id="before">Before</h4>
+                <a href="#" class="before">.before()</a>
+                <p>Insert content, specified by the parameter, before each element in the set of matched elements.</p>
+            </div>
+            <div class="information-container">
+                <h4 id="after">After</h4>
+                <a href="#" class="after">.after()</a>
+                <p>Insert content, specified by the parameter, after each element in the set of matched elements.</p>
+            </div>
+            <div class="information-container">
+                <h4 id="append">Append</h4>
+                <a href="#" class="append">.append()</a>
+                <p>Insert content, specified by the parameter, to the end of each element in the set of matched elements.</p>
+            </div>
+            <div class="information-container">
+                <h4 id="html">HTML</h4>
+                <a href="#" class="html">.html()</a>
+                <p>Get the HTML contents of the first element in the set of matched elements.</p>
+            </div>
+            <div class="information-container">
+                <h4 id="attr">Attr</h4>
+                <a href="#" class="attr">.attr()</a>
+                <p>Get the value of an attribute for the first element in the set of matched elements.</p>
+            </div>
+            <div class="information-container">
+                <h4 id="val">Val</h4>
+                <a href="#" class="val">.val()</a>
+                <p>Get the current value of the first element in the set of matched elements.</p>
+            </div>
+            <div class="information-container">
+                <h4 id="text">Text</h4>
+                <a href="#" class="text">.text()</a>
+                <p class="text">Get the combined text contents of each element in the set of matched elements, including their descendants.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
